@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "exports": {
+    "Jsonsong.App.Common/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/Jsonsong.App.Common.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/Jsonsong.App.Common.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/Jsonsong.App.Common.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}

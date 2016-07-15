@@ -1,0 +1,41 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{5E4DFDF2-D3C5-4C34-A6E6-4C8D913D0B3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6FE5EE14-CBC0-452D-B095-0A21BB6A7241}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "Jsonsong.Api.Product", "src\Jsonsong.Product\Jsonsong.Api.Product.xproj", "{2330ED7D-C13E-4A99-932C-7B11055EF1F6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Jsonsong.App.Common", "Jsonsong.App.Common\Jsonsong.App.Common.csproj", "{E03FB358-D28B-467D-9E6E-BE55769365CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dal", "Dal", "{B6B44671-4575-4B14-95BF-AB75FC9839DB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2330ED7D-C13E-4A99-932C-7B11055EF1F6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2330ED7D-C13E-4A99-932C-7B11055EF1F6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2330ED7D-C13E-4A99-932C-7B11055EF1F6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2330ED7D-C13E-4A99-932C-7B11055EF1F6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E03FB358-D28B-467D-9E6E-BE55769365CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E03FB358-D28B-467D-9E6E-BE55769365CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E03FB358-D28B-467D-9E6E-BE55769365CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E03FB358-D28B-467D-9E6E-BE55769365CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2330ED7D-C13E-4A99-932C-7B11055EF1F6} = {5E4DFDF2-D3C5-4C34-A6E6-4C8D913D0B3B}
+		{E03FB358-D28B-467D-9E6E-BE55769365CF} = {B6B44671-4575-4B14-95BF-AB75FC9839DB}
+	EndGlobalSection
+EndGlobal
