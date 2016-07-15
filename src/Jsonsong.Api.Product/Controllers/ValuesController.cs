@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Jsonsong.App.Common;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Jsonsong.Product.Controllers
+namespace Jsonsong.Api.Products.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller
@@ -21,7 +20,7 @@ namespace Jsonsong.Product.Controllers
         [HttpGet("{id}")]
         public string Get(int id)
         {
-            return AppConstant.GetHello();
+            return "value";
         }
 
         // POST api/values

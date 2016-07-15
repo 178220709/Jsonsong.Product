@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "exports": {
+    "Jsonsong.Dal.Common/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/Jsonsong.Dal.Common.dll": {}
+      },
+      "runtime": {
+        "../packages/MongoDB.Bson.2.2.4/lib/net45/MongoDB.Bson.dll": {},
+        "../packages/MongoDB.Driver.2.2.4/lib/net45/MongoDB.Driver.dll": {},
+        "../packages/MongoDB.Driver.Core.2.2.4/lib/net45/MongoDB.Driver.Core.dll": {},
+        "C:/Users/jsons/.nuget/packages/Newtonsoft.Json/9.0.1/lib/net45/Newtonsoft.Json.dll": {},
+        "bin/Debug/Jsonsong.Dal.Common.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/Jsonsong.Dal.Common.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    },
+    "Jsonsong.Dal.Mall/1.0.0": {
+      "type": "project",
+      "framework": ".NETFramework,Version=v4.6.1",
+      "compile": {
+        "bin/Debug/Jsonsong.Dal.Mall.dll": {}
+      },
+      "runtime": {
+        "bin/Debug/Jsonsong.Dal.Mall.dll": {}
+      },
+      "contentFiles": {
+        "bin/Debug/Jsonsong.Dal.Mall.pdb": {
+          "buildAction": "None",
+          "codeLanguage": "any",
+          "copyToOutput": true
+        }
+      }
+    }
+  }
+}
