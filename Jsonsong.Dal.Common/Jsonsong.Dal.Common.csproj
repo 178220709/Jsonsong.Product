@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="Common\UtilEx.cs" />
     <Compile Include="MongoDB\BaseEntity.cs" />
     <Compile Include="MongoDB\Dao.cs" />
     <Compile Include="MongoDB\DataBaseManager.cs" />

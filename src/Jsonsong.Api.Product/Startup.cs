@@ -14,7 +14,7 @@ using Newtonsoft.Json.Serialization;
 using Swashbuckle.Swagger.Model;
 using Swashbuckle.SwaggerGen.Generator;
 
-namespace Jsonsong.Api.Products
+namespace Jsonsong.Api.Product
 {
     public class Startup
     {
@@ -53,6 +53,7 @@ namespace Jsonsong.Api.Products
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
 
+          
             services.AddMvc()
                 .AddJsonOptions(
                     options =>
@@ -84,6 +85,7 @@ namespace Jsonsong.Api.Products
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
+           
 
             app.UseApplicationInsightsRequestTelemetry();
             app.UseApplicationInsightsExceptionTelemetry();
@@ -98,7 +100,9 @@ namespace Jsonsong.Api.Products
         private static string GetXmlCommentsPath()
         {
             var app = PlatformServices.Default.Application;
-            return Path.Combine(app.ApplicationBasePath, app.ApplicationName + ".xml");
+            var path = Path.Combine(app.ApplicationBasePath, app.ApplicationName + ".xml");
+            Console.Out.WriteLine(path);
+            return path;
         }
     }
 

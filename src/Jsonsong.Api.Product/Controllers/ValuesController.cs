@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Jsonsong.Api.Products.Controllers
+namespace Jsonsong.Api.Product.Controllers
 {
     [Route("api/[controller]")]
     public class ValuesController : Controller

@@ -4,24 +4,24 @@ using Jsonsong.Dal.Common.MongoDb;
 using Jsonsong.Dal.Common.MongoDB;
 using Microsoft.AspNetCore.Mvc;
 
-namespace Jsonsong.Api.Products.Controllers.Base
+namespace Jsonsong.Api.Product.Controllers.Base
 {
     /// <summary>
     /// rest基类 默认暴露基础的http 谓词
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class BaseCrudController<T> : Controller where T : BaseEntity
+    public abstract class BaseCrudController<T> : Controller where T : BaseEntity
     {
-        Dao<T> dao = new Dao<T>();
+        protected Dao<T> dao = new Dao<T>();
 
         /// <summary>
-        /// Get All , maybe need override to custome yourself query
+        /// Get All 
         /// </summary>
         /// <returns></returns>
         [HttpGet]
-        public virtual IEnumerable<T> Get()
+        public virtual IEnumerable<T> Get(Pager pager)
         {
-            return dao.CreateQuery().Take(1000).ToList();
+            return dao.CreateQuery().Skip(pager.Skip).Take(pager.PageSize).ToList();
         }
 
         /// <summary>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Builder;
 
-namespace Jsonsong.Api.Products
+namespace Jsonsong.Api.Product
 {
     public class Program
     {
