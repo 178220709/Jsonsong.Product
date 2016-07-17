@@ -39,5 +39,12 @@ namespace Jsonsong.Api.Product.Controllers
         {
             return (query ?? new ProductQuery()).Query(dao.CreateQuery());
         }
+
+
+        [HttpGet("test1")]
+        public string Test1()
+        {
+            return "path:"+Startup.Tmp1;
+        }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Jsonsong.Api.Product.Common;
 using Jsonsong.Dal.Common.MongoDb;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -18,6 +19,9 @@ namespace Jsonsong.Api.Product
 {
     public class Startup
     {
+        public static string Tmp1 { get; set; }
+
+
         private readonly IHostingEnvironment _hostingEnv;
 
         public Startup(IHostingEnvironment env)
@@ -53,7 +57,7 @@ namespace Jsonsong.Api.Product
             // Add framework services.
             services.AddApplicationInsightsTelemetry(Configuration);
 
-          
+
             services.AddMvc()
                 .AddJsonOptions(
                     options =>
@@ -85,7 +89,8 @@ namespace Jsonsong.Api.Product
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
-           
+
+            // loggerFactory.AddProvider(new MongoLoggerProvider());
 
             app.UseApplicationInsightsRequestTelemetry();
             app.UseApplicationInsightsExceptionTelemetry();
@@ -101,7 +106,7 @@ namespace Jsonsong.Api.Product
         {
             var app = PlatformServices.Default.Application;
             var path = Path.Combine(app.ApplicationBasePath, app.ApplicationName + ".xml");
-            Console.Out.WriteLine(path);
+            Tmp1 = path;
             return path;
         }
     }
